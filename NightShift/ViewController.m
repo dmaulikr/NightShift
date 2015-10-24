@@ -7,9 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "TNSMediaProtocolImpl.h"
-#import "TNSPlayerView.h"
-#import "TNSAudioPlayer.h"
 #import <FSAudioStream.h>
 
 @interface ViewController ()

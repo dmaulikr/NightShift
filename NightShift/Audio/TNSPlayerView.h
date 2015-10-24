@@ -11,5 +11,6 @@
 
 @interface TNSPlayerView : UIView
 
+- (void)sendIdentifier:(NSString *)identifier;
 
 @end

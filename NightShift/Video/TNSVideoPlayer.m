@@ -69,4 +69,9 @@
     self.playBtn.center = CGPointMake(rect.size.width/2, rect.size.height/2);
 }
 
+- (void)disappear{
+    self.hidden = YES;
+    [self pause];
+}
+
 @end

@@ -19,14 +19,31 @@
                         <constraint firstAttribute="height" constant="44" id="zq1-tY-qji"/>
                     </constraints>
                     <state key="normal" image="icon_pause_normal"/>
+                    <connections>
+                        <action selector="pauseButtonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="hnY-4C-DZo"/>
+                    </connections>
                 </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bwu-HD-Gxy">
+                    <rect key="frame" x="279" y="247" width="42" height="21"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <animations/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="OSm-Yb-Mht" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="5Zi-wk-2nA"/>
                 <constraint firstItem="OSm-Yb-Mht" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="N9Z-Lp-QTF"/>
+                <constraint firstItem="OSm-Yb-Mht" firstAttribute="top" secondItem="bwu-HD-Gxy" secondAttribute="bottom" constant="10" id="QuX-uj-AqR"/>
+                <constraint firstItem="bwu-HD-Gxy" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="e3g-Cm-TPJ"/>
             </constraints>
+            <connections>
+                <outlet property="nameLabel" destination="bwu-HD-Gxy" id="dY1-Jx-lHD"/>
+                <outlet property="pauseButton" destination="OSm-Yb-Mht" id="Kg6-lj-Lbc"/>
+                <outlet property="titleLabel" destination="bwu-HD-Gxy" id="EXx-ZZ-NiZ"/>
+            </connections>
             <point key="canvasLocation" x="393" y="340"/>
         </view>
     </objects>

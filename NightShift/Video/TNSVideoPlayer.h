@@ -33,4 +33,6 @@
 // 暂停
 - (void)pause;
 
+- (void)disappear;
+
 @end

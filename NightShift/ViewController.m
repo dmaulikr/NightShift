@@ -8,19 +8,19 @@
 
 #import "ViewController.h"
 #import <FSAudioStream.h>
+#import "TNSPlayerView.h"
 
 @interface ViewController ()
-@property (nonatomic, strong) FSAudioStream *stream;
-
+@property (nonatomic, strong) TNSPlayerView *playerView;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.stream = [[FSAudioStream alloc] initWithUrl:[NSURL URLWithString:@"http://file.qianqian.com//data2/music/18874628/18874628.mp3?xcode=e5b6e8a9cc0ddfe705ffee87c3adb48c&src="]];
-    [self.stream setVolume:0.5];
-    [self.stream play];
+    self.playerView = [[TNSPlayerView alloc] initWithFrame:self.view.frame];
+    [self.view addSubview:self.playerView];
+    
 }
 
 - (void)didReceiveMemoryWarning {

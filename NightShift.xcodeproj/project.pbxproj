@@ -13,7 +13,6 @@
 		9DC801161BDBD10100EF592A /* TNSMediaProtocolImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC801151BDBD10100EF592A /* TNSMediaProtocolImpl.m */; };
 		9DC801211BDBD2A800EF592A /* TNSQiubaiVideoCrawler.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC8011E1BDBD2A800EF592A /* TNSQiubaiVideoCrawler.m */; };
 		9DC801221BDBD2A800EF592A /* TNSVideoPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC801201BDBD2A800EF592A /* TNSVideoPlayer.m */; };
-		9DC801271BDBDFE300EF592A /* TNSPlayerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DC801261BDBDFE300EF592A /* TNSPlayerView.xib */; };
 		9DEFF0D81BDBA734009E2D0C /* TNSPlayerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DEFF0D71BDBA734009E2D0C /* TNSPlayerView.xib */; };
 		9DEFF0DB1BDBA749009E2D0C /* TNSAudioWebServices.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DEFF0DA1BDBA749009E2D0C /* TNSAudioWebServices.m */; };
 		9DEFF0DE1BDBA789009E2D0C /* TNSAudioInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DEFF0DD1BDBA789009E2D0C /* TNSAudioInfo.m */; };
@@ -61,7 +60,6 @@
 		9DC8011E1BDBD2A800EF592A /* TNSQiubaiVideoCrawler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNSQiubaiVideoCrawler.m; sourceTree = "<group>"; };
 		9DC8011F1BDBD2A800EF592A /* TNSVideoPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNSVideoPlayer.h; sourceTree = "<group>"; };
 		9DC801201BDBD2A800EF592A /* TNSVideoPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNSVideoPlayer.m; sourceTree = "<group>"; };
-		9DC801261BDBDFE300EF592A /* TNSPlayerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TNSPlayerView.xib; sourceTree = "<group>"; };
 		9DEFF0D71BDBA734009E2D0C /* TNSPlayerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TNSPlayerView.xib; sourceTree = "<group>"; };
 		9DEFF0D91BDBA749009E2D0C /* TNSAudioWebServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNSAudioWebServices.h; sourceTree = "<group>"; };
 		9DEFF0DA1BDBA749009E2D0C /* TNSAudioWebServices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNSAudioWebServices.m; sourceTree = "<group>"; };
@@ -151,7 +149,6 @@
 				9DC801151BDBD10100EF592A /* TNSMediaProtocolImpl.m */,
 				9DEFF0E81BDBCA30009E2D0C /* TNSPlayerView.h */,
 				9DEFF0E91BDBCA30009E2D0C /* TNSPlayerView.m */,
-				9DC801261BDBDFE300EF592A /* TNSPlayerView.xib */,
 				BB1303FA1BDB53CB009F6ED8 /* Tab */,
 				BB1303F51BDB4C17009F6ED8 /* Utils */,
 				BB1303F41BDB4C03009F6ED8 /* Video */,
@@ -373,7 +370,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB1303CF1BDB439B009F6ED8 /* LaunchScreen.storyboard in Resources */,
-				9DC801271BDBDFE300EF592A /* TNSPlayerView.xib in Resources */,
 				BB1303CC1BDB439B009F6ED8 /* Assets.xcassets in Resources */,
 				9D4FF82B1BDBF6B500858A03 /* TNSAudioPlayer.xib in Resources */,
 				9DEFF0D81BDBA734009E2D0C /* TNSPlayerView.xib in Resources */,

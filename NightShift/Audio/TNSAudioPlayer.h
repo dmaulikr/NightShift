@@ -11,5 +11,11 @@
 
 @interface TNSAudioPlayer : UIView
 
+- (instancetype)initWithIdentifier:(NSString *)identifier;
+- (void)setUpUIWithIdentifier:(NSString *)identifier;
+- (void)play;
+- (void)stop;
+- (void)pause;
+- (void)disappear;
 
 @end

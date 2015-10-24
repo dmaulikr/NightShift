@@ -6,15 +6,19 @@
 //
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface TNSCommonUtils : NSObject
 
-@end
+// 检查字符串是否为空
++ (BOOL)isStrEmpty:(NSString *)str;
 
+// 返回一个UIFont对象
++ (UIFont *)setFontSize:(float)fontSize;
 
-@interface NSString (Check)
-
-- (BOOL)isEmpty;
+// 返回颜色值，默认alpha为1.0
++ (UIColor *)setR:(int)r G:(int)g B:(int)b;
+// 返回颜色值
++ (UIColor *)setR:(int)r G:(int)g B:(int)b alpha:(float)alpha;
 
 @end

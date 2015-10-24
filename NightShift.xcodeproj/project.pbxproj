@@ -17,6 +17,7 @@
 		BB1303DA1BDB439B009F6ED8 /* NightShiftTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1303D91BDB439B009F6ED8 /* NightShiftTests.m */; };
 		BB1303E51BDB439B009F6ED8 /* NightShiftUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1303E41BDB439B009F6ED8 /* NightShiftUITests.m */; };
 		BB1303F81BDB4DCD009F6ED8 /* TNSCommonUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1303F71BDB4DCD009F6ED8 /* TNSCommonUtils.m */; };
+		BB1303FD1BDB5418009F6ED8 /* TNSTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1303FC1BDB5418009F6ED8 /* TNSTabbarController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,9 @@
 		BB1303E61BDB439B009F6ED8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB1303F61BDB4DCD009F6ED8 /* TNSCommonUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNSCommonUtils.h; sourceTree = "<group>"; };
 		BB1303F71BDB4DCD009F6ED8 /* TNSCommonUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNSCommonUtils.m; sourceTree = "<group>"; };
+		BB1303F91BDB50B6009F6ED8 /* NightShift-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NightShift-Prefix.pch"; sourceTree = "<group>"; };
+		BB1303FB1BDB5418009F6ED8 /* TNSTabbarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNSTabbarController.h; sourceTree = "<group>"; };
+		BB1303FC1BDB5418009F6ED8 /* TNSTabbarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNSTabbarController.m; sourceTree = "<group>"; };
 		EE930EB3D4DED1147D86CB10 /* Pods-NightShift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NightShift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NightShift/Pods-NightShift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,6 +115,7 @@
 		BB1303BE1BDB439B009F6ED8 /* NightShift */ = {
 			isa = PBXGroup;
 			children = (
+				BB1303FA1BDB53CB009F6ED8 /* Tab */,
 				BB1303F51BDB4C17009F6ED8 /* Utils */,
 				BB1303F41BDB4C03009F6ED8 /* Video */,
 				BB1303F31BDB4BB4009F6ED8 /* Audio */,
@@ -123,6 +128,7 @@
 				BB1303CB1BDB439B009F6ED8 /* Assets.xcassets */,
 				BB1303CD1BDB439B009F6ED8 /* LaunchScreen.storyboard */,
 				BB1303D01BDB439B009F6ED8 /* Info.plist */,
+				BB1303F91BDB50B6009F6ED8 /* NightShift-Prefix.pch */,
 				BB1303BF1BDB439B009F6ED8 /* Supporting Files */,
 			);
 			path = NightShift;
@@ -182,6 +188,15 @@
 				BB1303F71BDB4DCD009F6ED8 /* TNSCommonUtils.m */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		BB1303FA1BDB53CB009F6ED8 /* Tab */ = {
+			isa = PBXGroup;
+			children = (
+				BB1303FB1BDB5418009F6ED8 /* TNSTabbarController.h */,
+				BB1303FC1BDB5418009F6ED8 /* TNSTabbarController.m */,
+			);
+			path = Tab;
 			sourceTree = "<group>";
 		};
 		C4D1AE71C94B1789063AC115 /* Frameworks */ = {
@@ -381,6 +396,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB1303FD1BDB5418009F6ED8 /* TNSTabbarController.m in Sources */,
 				BB1303C71BDB439B009F6ED8 /* ViewController.m in Sources */,
 				BB1303C41BDB439B009F6ED8 /* AppDelegate.m in Sources */,
 				BB1303F81BDB4DCD009F6ED8 /* TNSCommonUtils.m in Sources */,
@@ -525,6 +541,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				GCC_PREFIX_HEADER = "NightShift/NightShift-Prefix.pch";
 				INFOPLIST_FILE = NightShift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -539,6 +556,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				GCC_PREFIX_HEADER = "NightShift/NightShift-Prefix.pch";
 				INFOPLIST_FILE = NightShift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

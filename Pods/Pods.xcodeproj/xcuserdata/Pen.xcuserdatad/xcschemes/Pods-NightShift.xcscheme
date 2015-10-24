@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'DB20498392A6AD960A4F1BAA'
+               BlueprintIdentifier = '7F5264404F66EA0C6A186950'
                BlueprintName = 'Pods-NightShift'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libPods-NightShift.a'>

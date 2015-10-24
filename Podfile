@@ -10,6 +10,7 @@ target 'NightShift' do
   pod 'Masonry'
   pod 'FMDB'
   pod 'BmobSDK'
+  pod 'FreeStreamer'
 
 end
 

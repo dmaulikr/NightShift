@@ -19,7 +19,7 @@
     // Do any additional setup after loading the view.
     
     // 初始化操作
-    
+    self.view.backgroundColor = [UIColor whiteColor];
 }
 
 - (void)didReceiveMemoryWarning {

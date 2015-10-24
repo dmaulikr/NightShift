@@ -29,6 +29,11 @@
 		BB1303E51BDB439B009F6ED8 /* NightShiftUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1303E41BDB439B009F6ED8 /* NightShiftUITests.m */; };
 		BB1303F81BDB4DCD009F6ED8 /* TNSCommonUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1303F71BDB4DCD009F6ED8 /* TNSCommonUtils.m */; };
 		BB1303FD1BDB5418009F6ED8 /* TNSTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1303FC1BDB5418009F6ED8 /* TNSTabbarController.m */; };
+		BB13045D1BDC1773009F6ED8 /* NSDate+FormatDate.m in Sources */ = {isa = PBXBuildFile; fileRef = BB13045A1BDC1773009F6ED8 /* NSDate+FormatDate.m */; };
+		BB13045E1BDC1773009F6ED8 /* NSDate+Milliseconds.m in Sources */ = {isa = PBXBuildFile; fileRef = BB13045C1BDC1773009F6ED8 /* NSDate+Milliseconds.m */; };
+		BB1304621BDC17D1009F6ED8 /* _DatabaseTables.sql in Resources */ = {isa = PBXBuildFile; fileRef = BB1304611BDC17D1009F6ED8 /* _DatabaseTables.sql */; };
+		BB1304651BDC17DA009F6ED8 /* TNSPhotoWallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1304641BDC17DA009F6ED8 /* TNSPhotoWallViewController.m */; };
+		BB1304681BDC17E2009F6ED8 /* TNSDBCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1304671BDC17E2009F6ED8 /* TNSDBCenter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,7 +66,7 @@
 		9DC8011E1BDBD2A800EF592A /* TNSQiubaiVideoCrawler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNSQiubaiVideoCrawler.m; sourceTree = "<group>"; };
 		9DC8011F1BDBD2A800EF592A /* TNSVideoPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNSVideoPlayer.h; sourceTree = "<group>"; };
 		9DC801201BDBD2A800EF592A /* TNSVideoPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNSVideoPlayer.m; sourceTree = "<group>"; };
-		9DC801261BDBDFE300EF592A /* TNSPlayerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TNSPlayerView.xib; sourceTree = "<group>"; };
+		9DC801261BDBDFE300EF592A /* TNSPlayerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TNSPlayerView.xib; path = Audio/TNSPlayerView.xib; sourceTree = "<group>"; };
 		9DEFF0D71BDBA734009E2D0C /* TNSPlayerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TNSPlayerView.xib; sourceTree = "<group>"; };
 		9DEFF0D91BDBA749009E2D0C /* TNSAudioWebServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNSAudioWebServices.h; sourceTree = "<group>"; };
 		9DEFF0DA1BDBA749009E2D0C /* TNSAudioWebServices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNSAudioWebServices.m; sourceTree = "<group>"; };
@@ -92,6 +97,15 @@
 		BB1303F91BDB50B6009F6ED8 /* NightShift-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NightShift-Prefix.pch"; sourceTree = "<group>"; };
 		BB1303FB1BDB5418009F6ED8 /* TNSTabbarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNSTabbarController.h; sourceTree = "<group>"; };
 		BB1303FC1BDB5418009F6ED8 /* TNSTabbarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNSTabbarController.m; sourceTree = "<group>"; };
+		BB1304591BDC1773009F6ED8 /* NSDate+FormatDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+FormatDate.h"; sourceTree = "<group>"; };
+		BB13045A1BDC1773009F6ED8 /* NSDate+FormatDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+FormatDate.m"; sourceTree = "<group>"; };
+		BB13045B1BDC1773009F6ED8 /* NSDate+Milliseconds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Milliseconds.h"; sourceTree = "<group>"; };
+		BB13045C1BDC1773009F6ED8 /* NSDate+Milliseconds.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Milliseconds.m"; sourceTree = "<group>"; };
+		BB1304611BDC17D1009F6ED8 /* _DatabaseTables.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = _DatabaseTables.sql; sourceTree = "<group>"; };
+		BB1304631BDC17DA009F6ED8 /* TNSPhotoWallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNSPhotoWallViewController.h; sourceTree = "<group>"; };
+		BB1304641BDC17DA009F6ED8 /* TNSPhotoWallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNSPhotoWallViewController.m; sourceTree = "<group>"; };
+		BB1304661BDC17E2009F6ED8 /* TNSDBCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNSDBCenter.h; sourceTree = "<group>"; };
+		BB1304671BDC17E2009F6ED8 /* TNSDBCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNSDBCenter.m; sourceTree = "<group>"; };
 		EE930EB3D4DED1147D86CB10 /* Pods-NightShift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NightShift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NightShift/Pods-NightShift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -146,6 +160,9 @@
 		BB1303BE1BDB439B009F6ED8 /* NightShift */ = {
 			isa = PBXGroup;
 			children = (
+				BB1304601BDC178C009F6ED8 /* PhotoWall */,
+				BB13045F1BDC177A009F6ED8 /* DB */,
+				BB1304581BDC170C009F6ED8 /* Category */,
 				9DC801131BDBCEAE00EF592A /* TNSMediaProtocol.h */,
 				9DC801141BDBD10100EF592A /* TNSMediaProtocolImpl.h */,
 				9DC801151BDBD10100EF592A /* TNSMediaProtocolImpl.m */,
@@ -166,6 +183,7 @@
 				BB1303CD1BDB439B009F6ED8 /* LaunchScreen.storyboard */,
 				BB1303D01BDB439B009F6ED8 /* Info.plist */,
 				BB1303F91BDB50B6009F6ED8 /* NightShift-Prefix.pch */,
+				BB1304611BDC17D1009F6ED8 /* _DatabaseTables.sql */,
 				BB1303BF1BDB439B009F6ED8 /* Supporting Files */,
 			);
 			path = NightShift;
@@ -248,6 +266,35 @@
 				BB1303FC1BDB5418009F6ED8 /* TNSTabbarController.m */,
 			);
 			path = Tab;
+			sourceTree = "<group>";
+		};
+		BB1304581BDC170C009F6ED8 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				BB1304591BDC1773009F6ED8 /* NSDate+FormatDate.h */,
+				BB13045A1BDC1773009F6ED8 /* NSDate+FormatDate.m */,
+				BB13045B1BDC1773009F6ED8 /* NSDate+Milliseconds.h */,
+				BB13045C1BDC1773009F6ED8 /* NSDate+Milliseconds.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		BB13045F1BDC177A009F6ED8 /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				BB1304661BDC17E2009F6ED8 /* TNSDBCenter.h */,
+				BB1304671BDC17E2009F6ED8 /* TNSDBCenter.m */,
+			);
+			path = DB;
+			sourceTree = "<group>";
+		};
+		BB1304601BDC178C009F6ED8 /* PhotoWall */ = {
+			isa = PBXGroup;
+			children = (
+				BB1304631BDC17DA009F6ED8 /* TNSPhotoWallViewController.h */,
+				BB1304641BDC17DA009F6ED8 /* TNSPhotoWallViewController.m */,
+			);
+			path = PhotoWall;
 			sourceTree = "<group>";
 		};
 		C4D1AE71C94B1789063AC115 /* Frameworks */ = {
@@ -376,6 +423,7 @@
 				9DC801271BDBDFE300EF592A /* TNSPlayerView.xib in Resources */,
 				BB1303CC1BDB439B009F6ED8 /* Assets.xcassets in Resources */,
 				9D4FF82B1BDBF6B500858A03 /* TNSAudioPlayer.xib in Resources */,
+				BB1304621BDC17D1009F6ED8 /* _DatabaseTables.sql in Resources */,
 				9DEFF0D81BDBA734009E2D0C /* TNSPlayerView.xib in Resources */,
 				BB1303CA1BDB439B009F6ED8 /* Main.storyboard in Resources */,
 			);
@@ -451,11 +499,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB1303FD1BDB5418009F6ED8 /* TNSTabbarController.m in Sources */,
+				BB1304681BDC17E2009F6ED8 /* TNSDBCenter.m in Sources */,
 				9DC801161BDBD10100EF592A /* TNSMediaProtocolImpl.m in Sources */,
 				9DEFF0DB1BDBA749009E2D0C /* TNSAudioWebServices.m in Sources */,
 				9D8674191BDBA6A000C7DAF3 /* TNSAudioViewModel.m in Sources */,
 				9DEFF0DE1BDBA789009E2D0C /* TNSAudioInfo.m in Sources */,
+				BB1304651BDC17DA009F6ED8 /* TNSPhotoWallViewController.m in Sources */,
+				BB13045D1BDC1773009F6ED8 /* NSDate+FormatDate.m in Sources */,
 				BB1303C71BDB439B009F6ED8 /* ViewController.m in Sources */,
+				BB13045E1BDC1773009F6ED8 /* NSDate+Milliseconds.m in Sources */,
 				9DEFF0EA1BDBCA30009E2D0C /* TNSPlayerView.m in Sources */,
 				BB1303C41BDB439B009F6ED8 /* AppDelegate.m in Sources */,
 				9DEFF0E71BDBBDAC009E2D0C /* TNSAudioPlayer.m in Sources */,

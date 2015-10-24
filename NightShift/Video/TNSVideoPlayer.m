@@ -34,8 +34,7 @@
         _playerLayer = layer;
         
         UIButton *playBtn = [UIButton buttonWithType:UIButtonTypeSystem];
-#warning 未设置播放按钮图片
-        [playBtn setImage:[UIImage imageNamed:@""] forState:UIControlStateNormal];
+        [playBtn setImage:[UIImage imageNamed:@"icon_play_normal"] forState:UIControlStateNormal];
         [playBtn addTarget:self action:@selector(play) forControlEvents:UIControlEventTouchUpInside];
         _playBtn = playBtn;
     }

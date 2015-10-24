@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "TNSAudioPlayer.h"
 
 @interface ViewController ()
 
@@ -16,7 +17,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    TNSAudioPlayer *player = [[TNSAudioPlayer alloc] init];
+    [player getAudioInfoWithTag:@"民谣" success:^(NSArray *AudioIdentifierArray) {
+        NSLog(@"%@",AudioIdentifierArray);
+    }];
 }
 
 - (void)didReceiveMemoryWarning {

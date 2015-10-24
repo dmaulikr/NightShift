@@ -19,23 +19,24 @@
 @implementation TNSAudioPlayer
 
 
-- (instancetype)initWithIdentifier:(NSString *)identifier{
-    self = [super init];
+- (instancetype)initWithFrame:(CGRect)frame Identifier:(NSString *)identifier{
+    self = [super initWithFrame:frame];
     if (self) {
         _services = [[TNSAudioWebServices alloc] init];
         _audioStream = [[FSAudioStream alloc] init];
+        self.backgroundColor = [UIColor whiteColor];
     }
     return self;
 }
 
-- (IBAction)pauseButtonTapped:(id)sender {
-    if (self.audioStream.isPlaying) {
-        [self pause];
-#warning 改变图标
-    } else{
-        [self play];
-    }
-}
+//- (IBAction)pauseButtonTapped:(id)sender {
+//    if (self.audioStream.isPlaying) {
+//        [self pause];
+//#warning 改变图标
+//    } else{
+//        [self play];
+//    }
+//}
 
 - (void)setUpUIWithIdentifier:(NSString *)identifier{
     identifier = [identifier substringFromIndex:6];

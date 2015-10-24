@@ -11,7 +11,7 @@
 
 @interface TNSAudioPlayer : UIView
 
-- (instancetype)initWithIdentifier:(NSString *)identifier;
+- (instancetype)initWithFrame:(CGRect)frame Identifier:(NSString *)identifier;
 - (void)setUpUIWithIdentifier:(NSString *)identifier;
 - (void)play;
 - (void)stop;

@@ -19,6 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.playerView = [[TNSPlayerView alloc] initWithFrame:self.view.frame];
+    self.playerView.hidden = YES;
     [self.view addSubview:self.playerView];
     
 }

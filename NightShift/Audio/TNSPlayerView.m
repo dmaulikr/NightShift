@@ -18,8 +18,8 @@
 
 @implementation TNSPlayerView
 
-- (instancetype)init{
-    self = [super init];
+- (instancetype)initWithFrame:(CGRect)frame{
+    self = [super initWithFrame:frame];
     if (self) {
         [self addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(getHidden:)]];
         [self initLayOut];
@@ -31,6 +31,13 @@
     self.blurView = [[UIVisualEffectView alloc] initWithEffect:[UIBlurEffect effectWithStyle:UIBlurEffectStyleLight]];
     self.blurView.frame = self.frame;
     [self addSubview:self.blurView];
+    
+    self.videoPlayer = [[TNSVideoPlayer alloc] initWithFrame:self.frame identifier:nil];
+    [self addSubview:self.videoPlayer];
+    
+    
+    self.audioPlayer = [[TNSAudioPlayer alloc] initWithFrame:CGRectInset([[UIScreen mainScreen] bounds], 30, 200)];
+    [self addSubview:self.audioPlayer];
 }
 
 - (void)getHidden:(UITapGestureRecognizer *)recognizer{

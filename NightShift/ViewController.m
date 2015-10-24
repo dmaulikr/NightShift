@@ -7,9 +7,13 @@
 //
 
 #import "ViewController.h"
+#import "TNSMediaProtocolImpl.h"
+#import "TNSPlayerView.h"
 #import "TNSAudioPlayer.h"
+#import <FSAudioStream.h>
 
 @interface ViewController ()
+@property (nonatomic, strong) FSAudioStream *stream;
 
 @end
 
@@ -17,10 +21,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    TNSAudioPlayer *player = [[TNSAudioPlayer alloc] init];
-    [player getAudioInfoWithTag:@"民谣" success:^(NSArray *AudioIdentifierArray) {
-        NSLog(@"%@",AudioIdentifierArray);
-    }];
+    self.stream = [[FSAudioStream alloc] initWithUrl:[NSURL URLWithString:@"http://file.qianqian.com//data2/music/18874628/18874628.mp3?xcode=e5b6e8a9cc0ddfe705ffee87c3adb48c&src="]];
+    [self.stream setVolume:0.5];
+    [self.stream play];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -8,11 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		9458720DAE8DC55B5166ABA6 /* libPods-NightShift.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7418F8411D5B0596E2F665B9 /* libPods-NightShift.a */; };
-		9D8674191BDBA6A000C7DAF3 /* TNSAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D8674141BDBA6A000C7DAF3 /* TNSAudioPlayer.m */; };
-		9DEFF0D61BDBA723009E2D0C /* TNSAudioPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DEFF0D51BDBA723009E2D0C /* TNSAudioPlayerView.m */; };
-		9DEFF0D81BDBA734009E2D0C /* TNSAudioPlayerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DEFF0D71BDBA734009E2D0C /* TNSAudioPlayerView.xib */; };
+		9D4FF82B1BDBF6B500858A03 /* TNSAudioPlayer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D4FF82A1BDBF6B500858A03 /* TNSAudioPlayer.xib */; };
+		9D8674191BDBA6A000C7DAF3 /* TNSAudioViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D8674141BDBA6A000C7DAF3 /* TNSAudioViewModel.m */; };
+		9DC801161BDBD10100EF592A /* TNSMediaProtocolImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC801151BDBD10100EF592A /* TNSMediaProtocolImpl.m */; };
+		9DC801211BDBD2A800EF592A /* TNSQiubaiVideoCrawler.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC8011E1BDBD2A800EF592A /* TNSQiubaiVideoCrawler.m */; };
+		9DC801221BDBD2A800EF592A /* TNSVideoPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC801201BDBD2A800EF592A /* TNSVideoPlayer.m */; };
+		9DC801271BDBDFE300EF592A /* TNSPlayerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DC801261BDBDFE300EF592A /* TNSPlayerView.xib */; };
+		9DEFF0D81BDBA734009E2D0C /* TNSPlayerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DEFF0D71BDBA734009E2D0C /* TNSPlayerView.xib */; };
 		9DEFF0DB1BDBA749009E2D0C /* TNSAudioWebServices.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DEFF0DA1BDBA749009E2D0C /* TNSAudioWebServices.m */; };
 		9DEFF0DE1BDBA789009E2D0C /* TNSAudioInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DEFF0DD1BDBA789009E2D0C /* TNSAudioInfo.m */; };
+		9DEFF0E71BDBBDAC009E2D0C /* TNSAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DEFF0E61BDBBDAC009E2D0C /* TNSAudioPlayer.m */; };
+		9DEFF0EA1BDBCA30009E2D0C /* TNSPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DEFF0E91BDBCA30009E2D0C /* TNSPlayerView.m */; };
 		BB1303C11BDB439B009F6ED8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1303C01BDB439B009F6ED8 /* main.m */; };
 		BB1303C41BDB439B009F6ED8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1303C31BDB439B009F6ED8 /* AppDelegate.m */; };
 		BB1303C71BDB439B009F6ED8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1303C61BDB439B009F6ED8 /* ViewController.m */; };
@@ -45,15 +51,26 @@
 /* Begin PBXFileReference section */
 		5C47ABD400E9E9144CF1223C /* Pods-NightShift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NightShift.release.xcconfig"; path = "Pods/Target Support Files/Pods-NightShift/Pods-NightShift.release.xcconfig"; sourceTree = "<group>"; };
 		7418F8411D5B0596E2F665B9 /* libPods-NightShift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NightShift.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D8674131BDBA6A000C7DAF3 /* TNSAudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNSAudioPlayer.h; sourceTree = "<group>"; };
-		9D8674141BDBA6A000C7DAF3 /* TNSAudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNSAudioPlayer.m; sourceTree = "<group>"; };
-		9DEFF0D41BDBA723009E2D0C /* TNSAudioPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNSAudioPlayerView.h; sourceTree = "<group>"; };
-		9DEFF0D51BDBA723009E2D0C /* TNSAudioPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNSAudioPlayerView.m; sourceTree = "<group>"; };
-		9DEFF0D71BDBA734009E2D0C /* TNSAudioPlayerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TNSAudioPlayerView.xib; sourceTree = "<group>"; };
+		9D4FF82A1BDBF6B500858A03 /* TNSAudioPlayer.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TNSAudioPlayer.xib; sourceTree = "<group>"; };
+		9D8674131BDBA6A000C7DAF3 /* TNSAudioVIewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNSAudioVIewModel.h; sourceTree = "<group>"; };
+		9D8674141BDBA6A000C7DAF3 /* TNSAudioViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNSAudioViewModel.m; sourceTree = "<group>"; };
+		9DC801131BDBCEAE00EF592A /* TNSMediaProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNSMediaProtocol.h; sourceTree = "<group>"; };
+		9DC801141BDBD10100EF592A /* TNSMediaProtocolImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TNSMediaProtocolImpl.h; path = Audio/TNSMediaProtocolImpl.h; sourceTree = "<group>"; };
+		9DC801151BDBD10100EF592A /* TNSMediaProtocolImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TNSMediaProtocolImpl.m; path = Audio/TNSMediaProtocolImpl.m; sourceTree = "<group>"; };
+		9DC8011D1BDBD2A800EF592A /* TNSQiubaiVideoCrawler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNSQiubaiVideoCrawler.h; sourceTree = "<group>"; };
+		9DC8011E1BDBD2A800EF592A /* TNSQiubaiVideoCrawler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNSQiubaiVideoCrawler.m; sourceTree = "<group>"; };
+		9DC8011F1BDBD2A800EF592A /* TNSVideoPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNSVideoPlayer.h; sourceTree = "<group>"; };
+		9DC801201BDBD2A800EF592A /* TNSVideoPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNSVideoPlayer.m; sourceTree = "<group>"; };
+		9DC801261BDBDFE300EF592A /* TNSPlayerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TNSPlayerView.xib; sourceTree = "<group>"; };
+		9DEFF0D71BDBA734009E2D0C /* TNSPlayerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TNSPlayerView.xib; sourceTree = "<group>"; };
 		9DEFF0D91BDBA749009E2D0C /* TNSAudioWebServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNSAudioWebServices.h; sourceTree = "<group>"; };
 		9DEFF0DA1BDBA749009E2D0C /* TNSAudioWebServices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNSAudioWebServices.m; sourceTree = "<group>"; };
 		9DEFF0DC1BDBA789009E2D0C /* TNSAudioInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNSAudioInfo.h; sourceTree = "<group>"; };
 		9DEFF0DD1BDBA789009E2D0C /* TNSAudioInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNSAudioInfo.m; sourceTree = "<group>"; };
+		9DEFF0E51BDBBDAC009E2D0C /* TNSAudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNSAudioPlayer.h; sourceTree = "<group>"; };
+		9DEFF0E61BDBBDAC009E2D0C /* TNSAudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNSAudioPlayer.m; sourceTree = "<group>"; };
+		9DEFF0E81BDBCA30009E2D0C /* TNSPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TNSPlayerView.h; path = Audio/TNSPlayerView.h; sourceTree = "<group>"; };
+		9DEFF0E91BDBCA30009E2D0C /* TNSPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TNSPlayerView.m; path = Audio/TNSPlayerView.m; sourceTree = "<group>"; };
 		BB1303BC1BDB439B009F6ED8 /* NightShift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NightShift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB1303C01BDB439B009F6ED8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BB1303C21BDB439B009F6ED8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -129,6 +146,12 @@
 		BB1303BE1BDB439B009F6ED8 /* NightShift */ = {
 			isa = PBXGroup;
 			children = (
+				9DC801131BDBCEAE00EF592A /* TNSMediaProtocol.h */,
+				9DC801141BDBD10100EF592A /* TNSMediaProtocolImpl.h */,
+				9DC801151BDBD10100EF592A /* TNSMediaProtocolImpl.m */,
+				9DEFF0E81BDBCA30009E2D0C /* TNSPlayerView.h */,
+				9DEFF0E91BDBCA30009E2D0C /* TNSPlayerView.m */,
+				9DC801261BDBDFE300EF592A /* TNSPlayerView.xib */,
 				BB1303FA1BDB53CB009F6ED8 /* Tab */,
 				BB1303F51BDB4C17009F6ED8 /* Utils */,
 				BB1303F41BDB4C03009F6ED8 /* Video */,
@@ -184,15 +207,16 @@
 		BB1303F31BDB4BB4009F6ED8 /* Audio */ = {
 			isa = PBXGroup;
 			children = (
-				9D8674131BDBA6A000C7DAF3 /* TNSAudioPlayer.h */,
-				9D8674141BDBA6A000C7DAF3 /* TNSAudioPlayer.m */,
-				9DEFF0D41BDBA723009E2D0C /* TNSAudioPlayerView.h */,
-				9DEFF0D51BDBA723009E2D0C /* TNSAudioPlayerView.m */,
-				9DEFF0D71BDBA734009E2D0C /* TNSAudioPlayerView.xib */,
+				9D8674131BDBA6A000C7DAF3 /* TNSAudioVIewModel.h */,
+				9D8674141BDBA6A000C7DAF3 /* TNSAudioViewModel.m */,
+				9DEFF0D71BDBA734009E2D0C /* TNSPlayerView.xib */,
 				9DEFF0D91BDBA749009E2D0C /* TNSAudioWebServices.h */,
 				9DEFF0DA1BDBA749009E2D0C /* TNSAudioWebServices.m */,
 				9DEFF0DC1BDBA789009E2D0C /* TNSAudioInfo.h */,
 				9DEFF0DD1BDBA789009E2D0C /* TNSAudioInfo.m */,
+				9DEFF0E51BDBBDAC009E2D0C /* TNSAudioPlayer.h */,
+				9DEFF0E61BDBBDAC009E2D0C /* TNSAudioPlayer.m */,
+				9D4FF82A1BDBF6B500858A03 /* TNSAudioPlayer.xib */,
 			);
 			path = Audio;
 			sourceTree = "<group>";
@@ -200,6 +224,10 @@
 		BB1303F41BDB4C03009F6ED8 /* Video */ = {
 			isa = PBXGroup;
 			children = (
+				9DC8011D1BDBD2A800EF592A /* TNSQiubaiVideoCrawler.h */,
+				9DC8011E1BDBD2A800EF592A /* TNSQiubaiVideoCrawler.m */,
+				9DC8011F1BDBD2A800EF592A /* TNSVideoPlayer.h */,
+				9DC801201BDBD2A800EF592A /* TNSVideoPlayer.m */,
 			);
 			path = Video;
 			sourceTree = "<group>";
@@ -345,8 +373,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB1303CF1BDB439B009F6ED8 /* LaunchScreen.storyboard in Resources */,
+				9DC801271BDBDFE300EF592A /* TNSPlayerView.xib in Resources */,
 				BB1303CC1BDB439B009F6ED8 /* Assets.xcassets in Resources */,
-				9DEFF0D81BDBA734009E2D0C /* TNSAudioPlayerView.xib in Resources */,
+				9D4FF82B1BDBF6B500858A03 /* TNSAudioPlayer.xib in Resources */,
+				9DEFF0D81BDBA734009E2D0C /* TNSPlayerView.xib in Resources */,
 				BB1303CA1BDB439B009F6ED8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -421,12 +451,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB1303FD1BDB5418009F6ED8 /* TNSTabbarController.m in Sources */,
+				9DC801161BDBD10100EF592A /* TNSMediaProtocolImpl.m in Sources */,
 				9DEFF0DB1BDBA749009E2D0C /* TNSAudioWebServices.m in Sources */,
-				9D8674191BDBA6A000C7DAF3 /* TNSAudioPlayer.m in Sources */,
+				9D8674191BDBA6A000C7DAF3 /* TNSAudioViewModel.m in Sources */,
 				9DEFF0DE1BDBA789009E2D0C /* TNSAudioInfo.m in Sources */,
-				9DEFF0D61BDBA723009E2D0C /* TNSAudioPlayerView.m in Sources */,
 				BB1303C71BDB439B009F6ED8 /* ViewController.m in Sources */,
+				9DEFF0EA1BDBCA30009E2D0C /* TNSPlayerView.m in Sources */,
 				BB1303C41BDB439B009F6ED8 /* AppDelegate.m in Sources */,
+				9DEFF0E71BDBBDAC009E2D0C /* TNSAudioPlayer.m in Sources */,
+				9DC801221BDBD2A800EF592A /* TNSVideoPlayer.m in Sources */,
+				9DC801211BDBD2A800EF592A /* TNSQiubaiVideoCrawler.m in Sources */,
 				BB1303F81BDB4DCD009F6ED8 /* TNSCommonUtils.m in Sources */,
 				BB1303C11BDB439B009F6ED8 /* main.m in Sources */,
 			);
@@ -571,7 +605,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				GCC_PREFIX_HEADER = "NightShift/NightShift-Prefix.pch";
 				INFOPLIST_FILE = NightShift/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.toast.NightShift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -586,7 +620,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				GCC_PREFIX_HEADER = "NightShift/NightShift-Prefix.pch";
 				INFOPLIST_FILE = NightShift/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.toast.NightShift;
 				PRODUCT_NAME = "$(TARGET_NAME)";

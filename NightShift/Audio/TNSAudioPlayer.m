@@ -6,55 +6,45 @@
 //
 //
 
+#import "TNSAudioWebServices.h"
 #import "TNSAudioPlayer.h"
 
-@interface TNSAudioPlayer(){
-    NSInteger startNum;
-    NSString *AudioTag;
-}
+@interface TNSAudioPlayer()
 @property (nonatomic, strong) TNSAudioWebServices *services;
+@property (nonatomic, strong) FSAudioStream *audioStream;
 @end
 
 @implementation TNSAudioPlayer
 
+
 - (instancetype)init{
     self = [super init];
     if (self) {
-        startNum = 0;
-        _isExcuting = NO;
-        _services = [[TNSAudioWebServices alloc] init];
-        AudioTag = [NSString string];
+        [self initialize];
     }
     return self;
 }
 
-- (void)getAudioInfoWithTag:(NSString *)tag success:(void (^)(NSArray *))success{
-    startNum = 0;
-    AudioTag = tag;
-    self.isExcuting = YES;
-    [self.services getDBSongInfoWithTag:tag start:startNum success:^(NSArray *array) {
-        NSMutableArray *identifierArray = [NSMutableArray array];
-        for (TNSAudioInfo *info in array) {
-            NSString *identifier = [NSString stringWithFormat:@"audio@%@",info.dbSongID];
-            [identifierArray addObject:identifier];
-        }
-        self.isExcuting = NO;
-        success(identifierArray);
-    }];
+- (void)initialize{
+    self.audioStream = [[FSAudioStream alloc] initWithUrl:[NSURL URLWithString:@"http://file.qianqian.com//data2/music/18874628/18874628.mp3?xcode=e5b6e8a9cc0ddfe705ffee87c3adb48c&src="]];
+    [self.audioStream setVolume:0.5];
+    [self.audioStream play];
 }
 
-- (void)refreshWithSuccessBlock:(void (^)(NSArray *))success{
-    startNum += 10;
-    self.isExcuting = YES;
-    [self.services getDBSongInfoWithTag:AudioTag start:startNum success:^(NSArray *array) {
-        NSMutableArray *identifierArray = [NSMutableArray array];
-        for (TNSAudioInfo *info in array) {
-            NSString *identifier = [NSString stringWithFormat:@"audio@%@",info.songID];
-            [identifierArray addObject:identifier];
-        }
-        self.isExcuting = NO;
-        success(identifierArray);
-    }];
-}
+//- (void)setUpUIWithIdentifier:(NSString *)identifier{
+//    identifier = [identifier substringFromIndex:6];
+//    [self.services getDBSongInfoWithID:identifier success:^(NSString *title) {
+//        [self.services getBDSongInfoWithInfo:title success:^(NSString *identifier) {
+//            [self.services getBDSongDownloadURLWithSongID:identifier success:^(NSString *downloadURL) {
+//                self.url = [NSURL URLWithString:downloadURL];
+//                [self.audioStream setUrl:self.url];
+//                [self.audioStream setVolume:0.5];
+//                dispatch_async(dispatch_get_main_queue(), ^{
+//                    [self play];
+//                });
+//            }];
+//        }];
+//    }];
+//}
 
 @end

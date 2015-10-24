@@ -556,6 +556,7 @@ forHTTPHeaderField:(NSString *)field
             [mutableRequest setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
         }
         [mutableRequest setHTTPBody:[query dataUsingEncoding:self.stringEncoding]];
+        
     }
 
     return mutableRequest;

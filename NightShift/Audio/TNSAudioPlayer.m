@@ -12,8 +12,8 @@
 @interface TNSAudioPlayer()
 @property (nonatomic, strong) TNSAudioWebServices *services;
 @property (nonatomic, strong) FSAudioStream *audioStream;
-@property (weak, nonatomic) IBOutlet UIButton *pauseButton;
-@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@property (nonatomic, strong) UIButton *pauseButton;
+@property (nonatomic, strong) UILabel *titleLabel;
 @end
 
 @implementation TNSAudioPlayer
@@ -25,8 +25,17 @@
         _services = [[TNSAudioWebServices alloc] init];
         _audioStream = [[FSAudioStream alloc] init];
         self.backgroundColor = [UIColor whiteColor];
+        [self initLayOut];
     }
     return self;
+}
+
+- (void)initLayOut{
+    self.pauseButton = [[UIButton alloc] initWithFrame:CGRectInset(self.frame, self.frame.size.width/2-22, self.frame.size.height/2-22)];
+    [self.pauseButton setImage:[UIImage imageNamed:@"icon_pause_normal"] forState:UIControlStateNormal];
+    [self addSubview:self.pauseButton];
+    
+    self.titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(<#CGFloat x#>, <#CGFloat y#>, <#CGFloat width#>, <#CGFloat height#>)]
 }
 
 //- (IBAction)pauseButtonTapped:(id)sender {

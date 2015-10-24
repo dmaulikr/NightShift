@@ -32,7 +32,7 @@
     self.blurView.frame = self.frame;
     [self addSubview:self.blurView];
     
-    self.videoPlayer = [[TNSVideoPlayer alloc] initWithFrame:self.frame identifier:nil];
+    self.videoPlayer = [[TNSVideoPlayer alloc] initWithFrame:CGRectInset(self.frame, 0, self.frame.size.height/2-self.frame.size.width/2) identifier:nil];
     [self addSubview:self.videoPlayer];
     
     

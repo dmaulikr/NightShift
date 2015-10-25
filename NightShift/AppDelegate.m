@@ -27,6 +27,7 @@
 - (void)appearanceConfiguration
 {
     [[UINavigationBar appearance] setBarTintColor:[TNSCommonUtils setR:35 G:32 B:47]];
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
     [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor whiteColor]}];
     
     [[UITabBar appearance] setTintColor:[TNSCommonUtils setR:86 G:227 B:60]];

@@ -32,6 +32,8 @@
 		BB1304621BDC17D1009F6ED8 /* _DatabaseTables.sql in Resources */ = {isa = PBXBuildFile; fileRef = BB1304611BDC17D1009F6ED8 /* _DatabaseTables.sql */; };
 		BB1304651BDC17DA009F6ED8 /* TNSPhotoWallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1304641BDC17DA009F6ED8 /* TNSPhotoWallViewController.m */; };
 		BB1304681BDC17E2009F6ED8 /* TNSDBCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1304671BDC17E2009F6ED8 /* TNSDBCenter.m */; };
+		BB13046B1BDC4B87009F6ED8 /* TNSShowDetailPhotoSugue.m in Sources */ = {isa = PBXBuildFile; fileRef = BB13046A1BDC4B87009F6ED8 /* TNSShowDetailPhotoSugue.m */; };
+		BB13046E1BDC526E009F6ED8 /* TNSShowDetailPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB13046D1BDC526E009F6ED8 /* TNSShowDetailPhotoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +104,10 @@
 		BB1304641BDC17DA009F6ED8 /* TNSPhotoWallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNSPhotoWallViewController.m; sourceTree = "<group>"; };
 		BB1304661BDC17E2009F6ED8 /* TNSDBCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNSDBCenter.h; sourceTree = "<group>"; };
 		BB1304671BDC17E2009F6ED8 /* TNSDBCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNSDBCenter.m; sourceTree = "<group>"; };
+		BB1304691BDC4B87009F6ED8 /* TNSShowDetailPhotoSugue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNSShowDetailPhotoSugue.h; sourceTree = "<group>"; };
+		BB13046A1BDC4B87009F6ED8 /* TNSShowDetailPhotoSugue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNSShowDetailPhotoSugue.m; sourceTree = "<group>"; };
+		BB13046C1BDC526E009F6ED8 /* TNSShowDetailPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNSShowDetailPhotoViewController.h; sourceTree = "<group>"; };
+		BB13046D1BDC526E009F6ED8 /* TNSShowDetailPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNSShowDetailPhotoViewController.m; sourceTree = "<group>"; };
 		EE930EB3D4DED1147D86CB10 /* Pods-NightShift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NightShift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NightShift/Pods-NightShift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -287,6 +293,10 @@
 			children = (
 				BB1304631BDC17DA009F6ED8 /* TNSPhotoWallViewController.h */,
 				BB1304641BDC17DA009F6ED8 /* TNSPhotoWallViewController.m */,
+				BB13046C1BDC526E009F6ED8 /* TNSShowDetailPhotoViewController.h */,
+				BB13046D1BDC526E009F6ED8 /* TNSShowDetailPhotoViewController.m */,
+				BB1304691BDC4B87009F6ED8 /* TNSShowDetailPhotoSugue.h */,
+				BB13046A1BDC4B87009F6ED8 /* TNSShowDetailPhotoSugue.m */,
 			);
 			path = PhotoWall;
 			sourceTree = "<group>";
@@ -490,10 +500,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB13046B1BDC4B87009F6ED8 /* TNSShowDetailPhotoSugue.m in Sources */,
 				BB1303FD1BDB5418009F6ED8 /* TNSTabbarController.m in Sources */,
 				BB1304681BDC17E2009F6ED8 /* TNSDBCenter.m in Sources */,
 				9DC801161BDBD10100EF592A /* TNSMediaProtocolImpl.m in Sources */,
 				9DEFF0DB1BDBA749009E2D0C /* TNSAudioWebServices.m in Sources */,
+				BB13046E1BDC526E009F6ED8 /* TNSShowDetailPhotoViewController.m in Sources */,
 				9D8674191BDBA6A000C7DAF3 /* TNSAudioViewModel.m in Sources */,
 				9DEFF0DE1BDBA789009E2D0C /* TNSAudioInfo.m in Sources */,
 				BB1304651BDC17DA009F6ED8 /* TNSPhotoWallViewController.m in Sources */,

@@ -10,9 +10,6 @@
 
 #import "TNSDBCenter.h"
 
-#import "NSDate+Milliseconds.h"
-#import "NSDate+FormatDate.h"
-
 static NSString * const TNSDatabaseDirectoryRelativePath = @"/TNSDatabase";
 static NSString * const TNSDatabaseRelativePath          = @"/TNSDatabase/TNSDB.sqlite";
 
@@ -61,7 +58,7 @@ static NSString * const TNSNightShiftPhotosTable         = @"NightShiftPhotosTab
         } else {
             NSMutableArray *records = [NSMutableArray array];
             while ([rs next]) {
-                [records addObject:@{@"archievedData": [rs dataForColumnIndex:0],
+                [records addObject:@{@"img": [UIImage imageWithData:[rs dataForColumnIndex:0]],
                                      @"takeTime": [rs dataForColumnIndex:1]}];
             }
             

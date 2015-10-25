@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--音乐-->
@@ -146,10 +147,10 @@
             </objects>
             <point key="canvasLocation" x="755.5" y="2265.5"/>
         </scene>
-        <!--View Controller-->
+        <!--照片墙-->
         <scene sceneID="wDg-z9-Tgu">
             <objects>
-                <viewController id="mKQ-Xi-42I" sceneMemberID="viewController">
+                <viewController id="mKQ-Xi-42I" customClass="TNSPhotoWallViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mq2-pP-vwD"/>
                         <viewControllerLayoutGuide type="bottom" id="k7x-ZC-OfA"/>
@@ -160,11 +161,73 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="KCt-gB-Azh"/>
+                    <navigationItem key="navigationItem" title="照片墙" id="KCt-gB-Azh"/>
+                    <connections>
+                        <segue destination="HTs-Tf-D5g" kind="custom" identifier="ShowDetailPhoto" customClass="TNSShowDetailPhotoSugue" id="Qai-E3-zYG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e6s-yD-6WP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1464.5" y="3136.5"/>
+        </scene>
+        <!--Show Detail Photo View Controller-->
+        <scene sceneID="e5M-m3-ogK">
+            <objects>
+                <viewController id="HTs-Tf-D5g" customClass="TNSShowDetailPhotoViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="k0s-6W-ldK"/>
+                        <viewControllerLayoutGuide type="bottom" id="PYQ-DI-h0A"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Lju-3R-XoX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_bg" translatesAutoresizingMaskIntoConstraints="NO" id="ibS-nV-BLk">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <animations/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Cqz-xQ-ign">
+                                <rect key="frame" x="16" y="84" width="342" height="301"/>
+                                <animations/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="UOj-yC-3Z2">
+                                <rect key="frame" x="16" y="445" width="342" height="80"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="dsJ-Ub-qft"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Cqz-xQ-ign" firstAttribute="centerX" secondItem="Lju-3R-XoX" secondAttribute="centerX" id="8Q4-bL-C8w"/>
+                            <constraint firstAttribute="trailing" secondItem="ibS-nV-BLk" secondAttribute="trailing" id="InB-ee-Yjx"/>
+                            <constraint firstItem="UOj-yC-3Z2" firstAttribute="width" secondItem="Cqz-xQ-ign" secondAttribute="width" id="Nkk-BX-HGu"/>
+                            <constraint firstItem="ibS-nV-BLk" firstAttribute="top" secondItem="k0s-6W-ldK" secondAttribute="bottom" id="R4C-Cz-QX4"/>
+                            <constraint firstItem="ibS-nV-BLk" firstAttribute="leading" secondItem="Lju-3R-XoX" secondAttribute="leading" id="Uqr-dB-nlj"/>
+                            <constraint firstItem="Cqz-xQ-ign" firstAttribute="top" secondItem="k0s-6W-ldK" secondAttribute="bottom" constant="20" id="bmN-to-mTq"/>
+                            <constraint firstItem="PYQ-DI-h0A" firstAttribute="top" secondItem="ibS-nV-BLk" secondAttribute="bottom" id="dHY-0O-get"/>
+                            <constraint firstItem="Cqz-xQ-ign" firstAttribute="leading" secondItem="Lju-3R-XoX" secondAttribute="leadingMargin" id="qjI-7Y-TEC"/>
+                            <constraint firstItem="UOj-yC-3Z2" firstAttribute="top" secondItem="Cqz-xQ-ign" secondAttribute="bottom" constant="60" id="rAU-kh-AzK"/>
+                            <constraint firstItem="UOj-yC-3Z2" firstAttribute="centerX" secondItem="Cqz-xQ-ign" secondAttribute="centerX" id="sNk-AE-g20"/>
+                            <constraint firstItem="PYQ-DI-h0A" firstAttribute="top" secondItem="UOj-yC-3Z2" secondAttribute="bottom" constant="93" id="vq1-A2-dlj"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="imgView" destination="Cqz-xQ-ign" id="cdF-QH-Wel"/>
+                        <outlet property="textView" destination="UOj-yC-3Z2" id="4tL-pa-NCB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MZc-EI-lks" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2020.5" y="3136.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="rFI-A9-onL">
@@ -192,5 +255,6 @@
         <image name="icon_photowall_normal" width="20" height="20"/>
         <image name="icon_relax_normal" width="20" height="20"/>
         <image name="icon_thinkguide_normal" width="20" height="20"/>
+        <image name="img_bg" width="375" height="667"/>
     </resources>
 </document>

@@ -10,7 +10,7 @@
 
 @class TNSPhotoWallView;
 
-@interface TNSPhotoWallViewController : UIViewController
+@interface TNSPhotoWallViewController : UIViewController <UIActionSheetDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
 // 可滑动的照片墙
 @property (nonatomic, weak) TNSPhotoWallView *photoWallView;

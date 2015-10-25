@@ -30,7 +30,7 @@
            parameters:@{
                         @"tag":tag,
                         @"start":[NSNumber numberWithInteger:start],
-                        @"count":@4
+                        @"count":@3
                         }
               success:^(AFHTTPRequestOperation * _Nonnull operation, id  _Nonnull responseObject) {
                   NSArray *audionArray = responseObject[@"musics"];

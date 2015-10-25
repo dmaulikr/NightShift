@@ -29,26 +29,32 @@
 
 - (void)initLayOut{
     self.blurView = [[UIVisualEffectView alloc] initWithEffect:[UIBlurEffect effectWithStyle:UIBlurEffectStyleLight]];
-    self.blurView.frame = self.frame;
+    self.blurView.frame = self.bounds;
     [self addSubview:self.blurView];
     
-    self.videoPlayer = [[TNSVideoPlayer alloc] initWithFrame:CGRectInset(self.frame, 0, self.frame.size.height/2-self.frame.size.width/2) identifier:nil];
+    self.videoPlayer = [[TNSVideoPlayer alloc] initWithFrame:CGRectInset(self.bounds, 0, self.frame.size.height/2-self.frame.size.width/2) identifier:nil];
+    self.videoPlayer.hidden = YES;
     [self addSubview:self.videoPlayer];
     
     
-    self.audioPlayer = [[TNSAudioPlayer alloc] initWithFrame:CGRectInset([[UIScreen mainScreen] bounds], 30, 200)];
+    self.audioPlayer = [[TNSAudioPlayer alloc] initWithFrame:CGRectInset(self.bounds, 20, 100) Identifier:nil];
+    self.audioPlayer.hidden = YES;
     [self addSubview:self.audioPlayer];
 }
 
 - (void)getHidden:(UITapGestureRecognizer *)recognizer{
-    [self.audioPlayer disappear];
-    [self.videoPlayer disappear];
-    self.hidden = YES;
+    [UIView animateWithDuration:1.5 animations:^{
+        self.alpha = 0.0;
+    } completion:^(BOOL finished) {
+        [self.audioPlayer disappear];
+        [self.videoPlayer disappear];
+    }];
 }
 
 - (void)sendIdentifier:(NSString *)identifier{
+    NSLog(@"%@",identifier);
+    self.hidden = NO;
     if ([self isEqualToAudio:identifier]||[self isEqualToVideo:identifier]) {
-        self.hidden = NO;
         [self.superview bringSubviewToFront:self];
     }
     if ([self isEqualToAudio:identifier]) {
@@ -61,6 +67,9 @@
         [self.videoPlayer setupUIWithIdentifier:identifier];
         [self.videoPlayer play];
     }
+    [UIView animateWithDuration:0.3f animations:^{
+        self.alpha = 1.5;
+    }];
 }
 
 

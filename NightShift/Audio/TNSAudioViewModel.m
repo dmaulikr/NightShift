@@ -41,7 +41,7 @@
 }
 
 - (void)refreshWithSuccessBlock:(void (^)(NSArray *))success{
-    startNum += 4;
+    startNum += 3;
     [self.services getDBSongInfoWithTag:AudioTag start:startNum success:^(NSArray *array) {
         NSMutableArray *identifierArray = [NSMutableArray array];
         for (TNSAudioInfo *info in array) {

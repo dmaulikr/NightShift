@@ -19,7 +19,10 @@
     // Do any additional setup after loading the view.
     
     // 初始化操作
-    self.view.backgroundColor = [UIColor whiteColor];
+    self.view.backgroundColor = [UIColor clearColor];
+    UIImageView *imgView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"img_bg"]];
+    imgView.frame = [[UIScreen mainScreen] bounds];
+    [self.view insertSubview:imgView atIndex:0];
 }
 
 - (void)didReceiveMemoryWarning {

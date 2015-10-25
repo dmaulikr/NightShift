@@ -13,7 +13,7 @@
 @property (nonatomic, strong) TNSAudioWebServices *services;
 @property (nonatomic, strong) FSAudioStream *audioStream;
 @property (nonatomic, strong) UIButton *pauseButton;
-@property (nonatomic, strong) UILabel *titleLabel;
+//@property (nonatomic, strong) UILabel *titleLabel;
 @end
 
 @implementation TNSAudioPlayer
@@ -31,28 +31,32 @@
 }
 
 - (void)initLayOut{
-    self.pauseButton = [[UIButton alloc] initWithFrame:CGRectInset(self.frame, self.frame.size.width/2-22, self.frame.size.height/2-22)];
+    self.pauseButton = [[UIButton alloc] initWithFrame:CGRectInset(self.bounds, self.frame.size.width/2-22, self.frame.size.height/2-22)];
     [self.pauseButton setImage:[UIImage imageNamed:@"icon_pause_normal"] forState:UIControlStateNormal];
+    [self.pauseButton addTarget:self action:@selector(pauseButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:self.pauseButton];
     
-    self.titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(<#CGFloat x#>, <#CGFloat y#>, <#CGFloat width#>, <#CGFloat height#>)]
+//    CGRect frame = self.pauseButton.bounds;
+//    frame.size.width = self.frame.size.width;
+//    frame.origin.y += 100;
+//    self.titleLabel = [[UILabel alloc] initWithFrame:frame];
+//    self.titleLabel.textAlignment = NSTextAlignmentCenter;
+//    [self addSubview:self.titleLabel];
+    
 }
 
-//- (IBAction)pauseButtonTapped:(id)sender {
-//    if (self.audioStream.isPlaying) {
-//        [self pause];
-//#warning 改变图标
-//    } else{
-//        [self play];
-//    }
-//}
+- (void)pauseButtonTapped:(id)sender {
+    [self pause];
+    if (!self.audioStream.isPlaying) {
+        [self.pauseButton setImage:[UIImage imageNamed:@"icon_play_normal"] forState:UIControlStateNormal];
+    } else{
+        [self.pauseButton setImage:[UIImage imageNamed:@"icon_pause_normal"] forState:UIControlStateNormal];
+    }
+}
 
 - (void)setUpUIWithIdentifier:(NSString *)identifier{
     identifier = [identifier substringFromIndex:6];
     [self.services getDBSongInfoWithID:identifier success:^(NSString *title) {
-        dispatch_async(dispatch_get_main_queue(), ^{
-            self.titleLabel.text = title;
-        });
         [self.services getBDSongInfoWithInfo:title success:^(NSString *identifier) {
             [self.services getBDSongDownloadURLWithSongID:identifier success:^(NSString *downloadURL) {
                 [self.audioStream setUrl:[NSURL URLWithString:downloadURL]];
@@ -80,7 +84,6 @@
 - (void)disappear{
     [self stop];
     self.hidden = YES;
-    self.titleLabel.text = nil;
 }
 
 @end

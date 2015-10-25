@@ -22,9 +22,9 @@ static NSString *QiubaiBaseURLString = @"http://qiubai-video.qiushibaike.com/";
     }
     
     // 有未用的
-    if (unusedVideos.count >= 4) {
-        NSArray *returnedArray = [unusedVideos subarrayWithRange:NSMakeRange(0, 4)];
-        [unusedVideos removeObjectsInRange:NSMakeRange(0, 4)];
+    if (unusedVideos.count >= 3) {
+        NSArray *returnedArray = [unusedVideos subarrayWithRange:NSMakeRange(0, 3)];
+        [unusedVideos removeObjectsInRange:NSMakeRange(0, 3)];
         block(YES, returnedArray, nil);
         return ;
     }
@@ -64,8 +64,8 @@ static NSString *QiubaiBaseURLString = @"http://qiubai-video.qiushibaike.com/";
             }
             
             [unusedVideos addObjectsFromArray:identifiers];
-            NSArray *returnedArray = [unusedVideos subarrayWithRange:NSMakeRange(0, 4)];
-            [unusedVideos removeObjectsInRange:NSMakeRange(0, 4)];
+            NSArray *returnedArray = [unusedVideos subarrayWithRange:NSMakeRange(0, 3)];
+            [unusedVideos removeObjectsInRange:NSMakeRange(0, 3)];
             dispatch_async(dispatch_get_main_queue(), ^{
                 block(YES, returnedArray, nil);
             });

@@ -34,6 +34,13 @@
 		BB1304681BDC17E2009F6ED8 /* TNSDBCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1304671BDC17E2009F6ED8 /* TNSDBCenter.m */; };
 		BB13046B1BDC4B87009F6ED8 /* TNSShowDetailPhotoSugue.m in Sources */ = {isa = PBXBuildFile; fileRef = BB13046A1BDC4B87009F6ED8 /* TNSShowDetailPhotoSugue.m */; };
 		BB13046E1BDC526E009F6ED8 /* TNSShowDetailPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB13046D1BDC526E009F6ED8 /* TNSShowDetailPhotoViewController.m */; };
+		BB1304751BDC66EA009F6ED8 /* TNSBubbleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1304711BDC66EA009F6ED8 /* TNSBubbleManager.m */; };
+		BB1304761BDC66EA009F6ED8 /* TNSBubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1304731BDC66EA009F6ED8 /* TNSBubbleView.m */; };
+		BB1304771BDC66EA009F6ED8 /* TNSBubbleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1304741BDC66EA009F6ED8 /* TNSBubbleViewController.m */; };
+		BB13047E1BDC67D4009F6ED8 /* TNSPlayItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = BB13047B1BDC67D4009F6ED8 /* TNSPlayItemView.m */; };
+		BB13047F1BDC67D4009F6ED8 /* TNSPlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB13047D1BDC67D4009F6ED8 /* TNSPlayViewController.m */; };
+		BB1304811BDC684D009F6ED8 /* BSQuickAnimation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB1304801BDC684D009F6ED8 /* BSQuickAnimation.framework */; };
+		BB1304831BDC685B009F6ED8 /* BSQuickAnimation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BB1304801BDC684D009F6ED8 /* BSQuickAnimation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +59,20 @@
 			remoteInfo = NightShift;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BB1304841BDC685B009F6ED8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BB1304831BDC685B009F6ED8 /* BSQuickAnimation.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		5C47ABD400E9E9144CF1223C /* Pods-NightShift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NightShift.release.xcconfig"; path = "Pods/Target Support Files/Pods-NightShift/Pods-NightShift.release.xcconfig"; sourceTree = "<group>"; };
@@ -108,6 +129,17 @@
 		BB13046A1BDC4B87009F6ED8 /* TNSShowDetailPhotoSugue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNSShowDetailPhotoSugue.m; sourceTree = "<group>"; };
 		BB13046C1BDC526E009F6ED8 /* TNSShowDetailPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNSShowDetailPhotoViewController.h; sourceTree = "<group>"; };
 		BB13046D1BDC526E009F6ED8 /* TNSShowDetailPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNSShowDetailPhotoViewController.m; sourceTree = "<group>"; };
+		BB13046F1BDC66EA009F6ED8 /* TNSBubbleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNSBubbleViewController.h; sourceTree = "<group>"; };
+		BB1304701BDC66EA009F6ED8 /* TNSBubbleManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNSBubbleManager.h; sourceTree = "<group>"; };
+		BB1304711BDC66EA009F6ED8 /* TNSBubbleManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNSBubbleManager.m; sourceTree = "<group>"; };
+		BB1304721BDC66EA009F6ED8 /* TNSBubbleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNSBubbleView.h; sourceTree = "<group>"; };
+		BB1304731BDC66EA009F6ED8 /* TNSBubbleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNSBubbleView.m; sourceTree = "<group>"; };
+		BB1304741BDC66EA009F6ED8 /* TNSBubbleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNSBubbleViewController.m; sourceTree = "<group>"; };
+		BB13047A1BDC67D4009F6ED8 /* TNSPlayItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNSPlayItemView.h; sourceTree = "<group>"; };
+		BB13047B1BDC67D4009F6ED8 /* TNSPlayItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNSPlayItemView.m; sourceTree = "<group>"; };
+		BB13047C1BDC67D4009F6ED8 /* TNSPlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNSPlayViewController.h; sourceTree = "<group>"; };
+		BB13047D1BDC67D4009F6ED8 /* TNSPlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNSPlayViewController.m; sourceTree = "<group>"; };
+		BB1304801BDC684D009F6ED8 /* BSQuickAnimation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BSQuickAnimation.framework; sourceTree = "<group>"; };
 		EE930EB3D4DED1147D86CB10 /* Pods-NightShift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NightShift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NightShift/Pods-NightShift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -116,6 +148,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB1304811BDC684D009F6ED8 /* BSQuickAnimation.framework in Frameworks */,
 				9458720DAE8DC55B5166ABA6 /* libPods-NightShift.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,6 +173,7 @@
 		BB1303B31BDB439B009F6ED8 = {
 			isa = PBXGroup;
 			children = (
+				BB1304801BDC684D009F6ED8 /* BSQuickAnimation.framework */,
 				BB1303BE1BDB439B009F6ED8 /* NightShift */,
 				BB1303D81BDB439B009F6ED8 /* NightShiftTests */,
 				BB1303E31BDB439B009F6ED8 /* NightShiftUITests */,
@@ -177,6 +211,7 @@
 				BB1303F21BDB4B70009F6ED8 /* Animation */,
 				BB1303C21BDB439B009F6ED8 /* AppDelegate.h */,
 				BB1303C31BDB439B009F6ED8 /* AppDelegate.m */,
+				BB1304791BDC6793009F6ED8 /* PlayItem */,
 				BB1303C51BDB439B009F6ED8 /* ViewController.h */,
 				BB1303C61BDB439B009F6ED8 /* ViewController.m */,
 				BB1303C81BDB439B009F6ED8 /* Main.storyboard */,
@@ -219,6 +254,12 @@
 		BB1303F21BDB4B70009F6ED8 /* Animation */ = {
 			isa = PBXGroup;
 			children = (
+				BB13046F1BDC66EA009F6ED8 /* TNSBubbleViewController.h */,
+				BB1304701BDC66EA009F6ED8 /* TNSBubbleManager.h */,
+				BB1304711BDC66EA009F6ED8 /* TNSBubbleManager.m */,
+				BB1304721BDC66EA009F6ED8 /* TNSBubbleView.h */,
+				BB1304731BDC66EA009F6ED8 /* TNSBubbleView.m */,
+				BB1304741BDC66EA009F6ED8 /* TNSBubbleViewController.m */,
 			);
 			path = Animation;
 			sourceTree = "<group>";
@@ -301,6 +342,17 @@
 			path = PhotoWall;
 			sourceTree = "<group>";
 		};
+		BB1304791BDC6793009F6ED8 /* PlayItem */ = {
+			isa = PBXGroup;
+			children = (
+				BB13047A1BDC67D4009F6ED8 /* TNSPlayItemView.h */,
+				BB13047B1BDC67D4009F6ED8 /* TNSPlayItemView.m */,
+				BB13047C1BDC67D4009F6ED8 /* TNSPlayViewController.h */,
+				BB13047D1BDC67D4009F6ED8 /* TNSPlayViewController.m */,
+			);
+			path = PlayItem;
+			sourceTree = "<group>";
+		};
 		C4D1AE71C94B1789063AC115 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -331,6 +383,7 @@
 				BB1303BA1BDB439B009F6ED8 /* Resources */,
 				24309FF6F3C9DFBEE2C4FD9D /* Embed Pods Frameworks */,
 				6596B41EA800401C87F5CB9C /* Copy Pods Resources */,
+				BB1304841BDC685B009F6ED8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -387,6 +440,7 @@
 				TargetAttributes = {
 					BB1303BB1BDB439B009F6ED8 = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = RZNT97FSC3;
 					};
 					BB1303D41BDB439B009F6ED8 = {
 						CreatedOnToolsVersion = 7.1;
@@ -504,7 +558,9 @@
 				BB1303FD1BDB5418009F6ED8 /* TNSTabbarController.m in Sources */,
 				BB1304681BDC17E2009F6ED8 /* TNSDBCenter.m in Sources */,
 				9DC801161BDBD10100EF592A /* TNSMediaProtocolImpl.m in Sources */,
+				BB13047F1BDC67D4009F6ED8 /* TNSPlayViewController.m in Sources */,
 				9DEFF0DB1BDBA749009E2D0C /* TNSAudioWebServices.m in Sources */,
+				BB1304751BDC66EA009F6ED8 /* TNSBubbleManager.m in Sources */,
 				BB13046E1BDC526E009F6ED8 /* TNSShowDetailPhotoViewController.m in Sources */,
 				9D8674191BDBA6A000C7DAF3 /* TNSAudioViewModel.m in Sources */,
 				9DEFF0DE1BDBA789009E2D0C /* TNSAudioInfo.m in Sources */,
@@ -513,11 +569,14 @@
 				BB1303C71BDB439B009F6ED8 /* ViewController.m in Sources */,
 				BB13045E1BDC1773009F6ED8 /* NSDate+Milliseconds.m in Sources */,
 				9DEFF0EA1BDBCA30009E2D0C /* TNSPlayerView.m in Sources */,
+				BB13047E1BDC67D4009F6ED8 /* TNSPlayItemView.m in Sources */,
+				BB1304771BDC66EA009F6ED8 /* TNSBubbleViewController.m in Sources */,
 				BB1303C41BDB439B009F6ED8 /* AppDelegate.m in Sources */,
 				9DEFF0E71BDBBDAC009E2D0C /* TNSAudioPlayer.m in Sources */,
 				9DC801221BDBD2A800EF592A /* TNSVideoPlayer.m in Sources */,
 				9DC801211BDBD2A800EF592A /* TNSQiubaiVideoCrawler.m in Sources */,
 				BB1303F81BDB4DCD009F6ED8 /* TNSCommonUtils.m in Sources */,
+				BB1304761BDC66EA009F6ED8 /* TNSBubbleView.m in Sources */,
 				BB1303C11BDB439B009F6ED8 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -659,12 +718,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PREFIX_HEADER = "NightShift/NightShift-Prefix.pch";
 				INFOPLIST_FILE = NightShift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.toast.NightShift;
+				PRODUCT_BUNDLE_IDENTIFIER = com.whiteToast.NightShift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -674,12 +741,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PREFIX_HEADER = "NightShift/NightShift-Prefix.pch";
 				INFOPLIST_FILE = NightShift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.toast.NightShift;
+				PRODUCT_BUNDLE_IDENTIFIER = com.whiteToast.NightShift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

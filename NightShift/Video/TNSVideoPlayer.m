@@ -31,6 +31,7 @@
         [self.layer addSublayer:layer];
         
         _player = player;
+        [_player addObserver:self forKeyPath:@"status" options:0 context:nil];
         _playerLayer = layer;
         
         UIButton *playBtn = [UIButton buttonWithType:UIButtonTypeSystem];
@@ -50,12 +51,20 @@
     [self.player pause];
 }
 
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context{
+    if (object == self.player && [keyPath isEqualToString:@"status"]) {
+        if (self.player.status == AVPlayerStatusReadyToPlay) {
+            self.backgroundColor = [UIColor blackColor];
+        }
+    }
+}
+
 // 为了避免内存泄露进行手动释放
 - (void)dealloc
 {
     [self.player pause];
     [self.playerLayer removeFromSuperlayer];
-    
+    [self removeObserver:self.player forKeyPath:@"status" context:nil];
     _player = nil;
     _player = nil;
 }
@@ -70,7 +79,8 @@
 
 - (void)disappear{
     self.hidden = YES;
-    [self pause];
+    [self.player pause];
+    self.backgroundColor = [UIColor blackColor];
 }
 
 @end

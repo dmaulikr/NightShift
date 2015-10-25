@@ -11,5 +11,6 @@
 
 @interface TNSMediaProtocolImpl : NSObject<TNSMediaProtocol>
 
+@property (nonatomic) BOOL isLoading;
 
 @end
